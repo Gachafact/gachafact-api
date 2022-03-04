@@ -1,0 +1,27 @@
+{
+  "name": "gachafact-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gachafact/gachafact-api.git"
+  },
+  "author": "Archerist",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Gachafact/gachafact-api/issues"
+  },
+  "homepage": "https://github.com/Gachafact/gachafact-api#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13"
+  }
+}
