@@ -1,7 +1,13 @@
 import express from "express";
+import GDB from "./gatchafact-core/index.js";
+import dotenv from "dotenv";
+
+dotenv.config()
+
 console.log(process.env.DEBUG)
 
 
+const gdb = new GDB()
 
 type ServerPathList = {get: string[], post: string[]}
 
@@ -40,11 +46,11 @@ app.get('/', (req,res) =>{
 
 
 //#region GET
-app.get('/user/:id', (req,res) => {
+app.get('/user/:id', async (req,res) => {
 
-    
+    let user = await gdb.getUser(req.params.id)
 
-    res.send({userId: req.params.id})
+    res.send(user)
 })
 
 app.get('/user/:id/artifacts', (req,res) => {

@@ -1,3 +1,3 @@
 [submodule "Core"]
-	path = node_modules/gatchafact-core
+	path = gatchafact-core
 	url = git@github.com:Gachafact/gatchafact-core.git
